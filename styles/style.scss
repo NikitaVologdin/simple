@@ -1,0 +1,225 @@
+@import 'variables';
+
+.container {
+    max-width: 1280px;
+}
+
+.backgroundDark {
+    background-color: $firstColor;
+    padding: 50px;
+}
+
+.backgroundLite {
+    background-color: $secondColor;
+    padding: 50px;
+}
+
+.backgroundWhite {
+    background-color: #fff;
+    padding: 50px;
+}
+
+@media screen and (max-width: 993px) {
+
+    .backgroundDark,
+    .backgroundLite,
+    .backgroundWhite {
+        padding: 50px 20px;
+    }
+}
+
+.title {
+    font-size: 30px;
+    color: $firstColor;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+p {
+    color: $firstColor;
+}
+
+header {
+
+    h1 {
+        font-size: 60px;
+        margin-bottom: 50px;
+        font-weight: 400;
+        color: #fff;
+    }
+
+    li {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    ul {
+        list-style-image: url(images/checkicon.png);
+        padding-left: 35px;
+    }
+
+    .headerImg {
+        width: 470px;
+        height: 215px;
+        background-color: #fff;
+        position: relative;
+        top: 15px;
+        float: right;
+    }
+
+    @media screen and (max-width: 1199px) {
+        .headerImg {
+            width: 470px - 47px;
+            height: 215px - 21.5px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        .headerImg {
+            float: none;
+            margin: 0 auto;
+        }
+    }
+
+    @media screen and (max-width: 470px) {
+        .headerImg {
+            width: 100%;
+            height: 200px;
+        }
+    }
+}
+
+.about {
+
+    h2 {
+        text-align: left;
+    }
+
+    .aboutImg {
+        width: 430px;
+        height: 245px;
+        background-color: $firstColor;
+        float: right;
+    }
+
+    @media screen and (max-width: 1199px) {
+        .aboutImg {
+            width: 430px - 43px;
+            height: 245px - 24.5px;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        .aboutImg {
+            float: none;
+            margin: 0 auto;
+        }
+    }
+
+}
+
+.pluses {
+
+    .plus {
+        background: url(images/plusicon.gif) no-repeat;
+        background-position: 0 5px;
+        padding-left: 40px;
+        padding-right: 15px;
+    }
+}
+
+.scrinshots {
+
+    .scrinshotsItem {
+        margin-bottom: 30px;
+        padding-right: 10px;
+    }
+
+    .scrinshotsItem:after {
+        content: '';
+        clear: both;
+        display: block;
+
+    }
+
+    .scrin {
+        width: 200px;
+        height: 150px;
+        background-color: $firstColor;
+        float: left;
+        margin-right: 15px;
+        margin-top: 5px;
+    }
+
+    h3 {
+        font-size: 20px;
+        color: $firstColor;
+        line-height: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+.reviews {
+
+    .reviewUnit {
+        margin-bottom: 25px;
+    }
+
+    .reviewImg {
+        width: 75px;
+        height: 75px;
+        // background: url(images/userpic.png);
+        float: left;
+        background-color: $firstColor;
+        border-radius: 45px;
+        margin-top: 25px;
+
+    }
+
+    // .reviewImg:after {
+    // 	content: '';
+    // 	clear: both;
+    // 	display: block;
+    // }
+
+    .arrow {
+        width: 25px;
+        height: 25px;
+        background-color: $thirdColor;
+        transform: rotate(45deg);
+        position: relative;
+        left: 85px;
+        top: 50px;
+    }
+
+    .reviewText {
+        width: 80%;
+        height: 120px;
+        background-color: $thirdColor;
+        font-size: 14px;
+        padding: 5px 20px;
+        margin-left: 95px;
+        border-radius: 5px;
+        font-style: italic;
+
+        .black {
+            color: #333;
+            font-weight: 500;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        .signature {
+            color: #989898;
+        }
+    }
+
+
+}
